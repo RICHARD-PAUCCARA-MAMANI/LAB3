@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8"/>
+        <title>Page Title </title>
+        <script>
+            function muestraOpcion() {
+                var opciones = document.getElementsByName("eleccion");
+                console.log(opciones);
+                for (let i = 0; i < opciones.length; i++){
+                    if(opciones[i].checked){
+                     alert (opciones[i].value);
+                    }
+                }
+            }
+        </script>
+        </head>
+<body>
+    <input type="radio" name="eleccion" value="Opción 1" checked onclick="muestraOpcion()"> Opción 1<br/>
+    <input type="radio" name="eleccion" value="Opción 2" onclick="muestraOpcion()"> Opción 2<br/>
+    <input type="radio" name="eleccion" value="Opción 3" onclick="muestraOpcion()"> Opción 3<br/>
+
+</body>
+</html> 
